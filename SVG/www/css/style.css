@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.car {
+  margin-left: 50px;
+  width: 500px;
+}
+
+.car svg {transition: transform 4s ease;}
+
+#wheel-1,
+#wheel-2 {cursor: pointer;}
+
+#wheel-1:hover,
+#wheel-2:hover {fill:  #519c80}
+
+#spoiler {
+  animation: spoiler 5s infinite ease;
+}
+
+@keyframes spoiler {
+  0% {transform: translateX(0px)}
+
+  30% {fill: #ff6464}
+
+  40% {transform: translateX(6px)}
+
+  60% {
+    transform: translateX(6px) rotate(5deg);
+    fill: #ff9800;
+  }
+
+  80% {transform: translateX(6px) rotate(0deg)}
+
+  90% {fill: #ff6464}
+
+  100% {transform: translateX(0px)}
+}
